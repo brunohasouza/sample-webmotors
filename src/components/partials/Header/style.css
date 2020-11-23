@@ -1,0 +1,21 @@
+header {
+  height: 4rem;
+  top: 0;
+  left: 0;
+  text-align: left;
+  width: 100%;
+  max-width: 965px;
+  padding: 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header a {
+  display: inline-block;
+  height: 2rem;
+}
+
+header img {
+  height: 100%;
+  width:auto;
+}

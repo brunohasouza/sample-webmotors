@@ -1,0 +1,259 @@
+.home__container {
+  width: 100%;
+  height: 100%;
+  max-width: 965px;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.home__container header {
+  margin: 1rem 0;
+  height: 2rem;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+
+.home__container header img {
+  height: 100%;
+  width:auto;
+}
+
+.home__form {
+  width: 100%;
+}
+
+.home__form--header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.btn-home-tab {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: transparent;
+  color: #9c9a9e;
+  padding: .75rem 1rem;
+  position: relative;
+  flex: 1 1 50%;
+}
+
+.btn-home-tab:focus {
+  outline: none;
+  border: none;
+}
+
+.btn-home-tab::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #9c9a9e;
+  transition: all 0.2s;
+}
+
+.btn-home-tab.active {
+  color: #ea0002;
+}
+
+.btn-home-tab.active::after {
+  height: 3px;
+  background-color: #ea0002;
+}
+
+.btn-home-tab p {
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.btn-home-tab p span {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.btn-home-tab p span:first-child {
+  font-size: .625rem;
+  line-height: 1rem;
+  color: #9c9a9e;
+}
+
+.btn-home-tab p span:last-child {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+
+.btn-home-tab i {
+  font-size: 2rem;
+  line-height: 1.5rem;
+}
+
+.btn-sell {
+  width: 100%;
+  margin-bottom: .25rem;
+}
+
+.home__form--fields {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.home_form--field {
+  padding: .5rem;
+  box-sizing: border-box;
+  flex: 1 1 100%;
+}
+
+.home_form--field.place {
+  display: flex;
+  position: relative;
+}
+
+.home_form--field.place > i {
+  position: absolute;
+  color: #ea0002;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  top: 50%;
+  left: .75rem;
+  transform: translateY(-50%);
+}
+
+.home_form--field .placeSelect {
+  flex: 1;
+}
+
+.home_form--field .rangeSelect {
+  flex: 0 0 auto;
+  width: 8.5rem;
+}
+
+.home_form--submit {
+  padding: .5rem;
+  flex: 1;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_form--submit .btn-large {
+  padding-top: .875rem;
+  padding-bottom: .875rem;
+  font-size: 1rem;
+  order: 1;
+  margin-bottom: 1rem;
+}
+
+.home_form--submit .btn-flat-red {
+  order: 2;
+}
+
+.home_form--submit .btn-flat-grey {
+  order: 3;
+}
+
+.placeSelect .css-g1d714-ValueContainer {
+  padding-left: 1.75rem;
+}
+
+.placeSelect .css-yk16xz-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rangeSelect .css-yk16xz-control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.home_form--check {
+  flex: 0 0 100%;
+  display: flex;
+  padding: .5rem;
+}
+
+.home_form--check .custom-checkbox {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .home__form {
+    margin-top: 7rem;
+  }
+
+  .home__container header {
+    padding: 0 1rem;
+    text-align: left;
+    position: absolute;
+  }
+
+  .home_form--field {
+    flex: 0 0 50%;
+  }
+
+  .home_form--field.colspan {
+    flex: 1 1 100%;
+  }
+
+  .btn-sell {
+    order: 3;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: max-content;
+  }
+
+  .btn-home-tab {
+    flex: 0 0 auto;
+  }
+
+  .home_form--submit {
+    justify-content: flex-end;
+  }
+
+  .home_form--submit .btn {
+    margin-left: 1rem;
+  }
+  
+  .home_form--submit .btn-large {
+    order: 3;
+    max-width: 16rem;
+    margin-bottom: 0;
+  }
+  
+  .home_form--submit .btn-flat-red {
+    margin: 0;
+    margin-right: auto;
+    margin-left: -0.5rem;    
+    order: 1;
+  }
+  
+  .home_form--submit .btn-flat-grey {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home_form--field {
+    flex: 0 0 25%;
+  }
+
+  .home_form--field.colspan {
+    flex: 0 0 50%;
+  }
+}

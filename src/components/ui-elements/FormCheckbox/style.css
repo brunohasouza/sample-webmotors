@@ -1,0 +1,37 @@
+.custom-checkbox {
+  display: inline-block;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox label {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #999;
+  position: relative;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+
+.custom-checkbox label::before {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #BBB;
+  border-radius: 2px;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  line-height: 1rem;
+  color: #ea0002;
+  font-weight: bold;
+}
+
+.custom-checkbox input:checked + label::before {
+  content: "\2713";
+}

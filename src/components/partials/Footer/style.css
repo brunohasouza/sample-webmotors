@@ -1,0 +1,52 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+footer div {
+  text-align: right;
+  background-color: #ea0002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+footer div span {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+footer div a {
+  display: inline-block;
+  height: 1.5rem;
+  margin-left: .75rem;
+}
+
+footer div a img {
+  height: 100%;
+  width: auto;
+}
+
+footer address {
+  padding: 1rem;
+  background-color: #4c4c59;
+  font-style: none;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  footer div {
+    justify-content: flex-end;
+  }
+
+  footer address {
+    text-align: left;
+  }
+}
